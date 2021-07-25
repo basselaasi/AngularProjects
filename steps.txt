@@ -1,0 +1,6 @@
+- Install Angular: npm install -g @angular/cli
+- create Angular directory: ng new ng-video-game-db --style=scss
+- ng add @angular/material
+- npm i angular-gauge
+- create component: ng g c search-bar
+- create routing: app-routing.module.ts
