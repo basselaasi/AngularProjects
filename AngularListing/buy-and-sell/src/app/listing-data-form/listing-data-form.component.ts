@@ -11,12 +11,14 @@ export class ListingDataFormComponent implements OnInit {
   @Input() currentName = '';
   @Input() currentDescription = '';
   @Input() currentPrice = '';
+  @Input() currentViews = '0';
 
 
 
   name: string = '';
   description: string = '';
   price: string = ''; 
+  views: string = '';
   @Output() onSubmit = new EventEmitter<Listing>();
     constructor(
       private router: Router,
@@ -26,6 +28,7 @@ export class ListingDataFormComponent implements OnInit {
       this.name = this.currentName;
       this.description = this.currentDescription;
       this.price = this.currentPrice;
+      this.views = this.currentViews;
     }
     onButtonClicked(): void {
       //alert('Creating a new listing...!')
@@ -35,6 +38,7 @@ export class ListingDataFormComponent implements OnInit {
         name:this.name,
         description: this.description,
         price: Number(this.price),
+        views: 0,
       });
 
     }
