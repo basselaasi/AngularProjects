@@ -26,6 +26,8 @@ export class ListingDetailPageComponent implements OnInit {
         this.isLoading = false;
 
       });
+      this.listingsService.addViewToListing(id)
+        .subscribe(() => console.log('View updated!'));
   }
 
 }
