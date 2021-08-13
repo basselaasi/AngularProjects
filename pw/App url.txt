@@ -1,2 +1,3 @@
 https://passwordgenerator-6bzuvwh25-basselaasi.vercel.app/
+https://passwordgenerator-basselaasi.vercel.app/
         <button cdkCopyToClipboard = {{ password }}>copy the password</button>
